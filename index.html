@@ -6,6 +6,23 @@
 </head>
 <body>
     <div>
+        <table style="width: 100%;">
+            <tr>
+                <td>
+                    <img 
+                        src="./images/logo-black.png"
+                        srcset="./images/logo-black@2x.png 2x, ./images/logo-black@4x.png 4x" 
+                        alt="logo"/>
+                </td>
+                <td align="right">
+                    DECEMBER 2021
+                </td>
+            </tr>
+        </table>
+        <img 
+                        src="./images/human.png"
+                        srcset="./images/human@2x.png 2x, ./images/human@4x.png 4x" 
+                        alt="human"/>
         <h1>CHOOSE FLUTTER TO CHOOSE BOTH</h1>
         <button>REGISTER</button>
     </div>
@@ -44,6 +61,95 @@
 
     <div>
         <h2>WHO</h2>
+        <style>
+            table {
+                border: 1px solid orange;
+                border-top: 10px solid orange;
+                border-collapse: collapse;
+                width: 50%;
+            }
+            th, td {
+                border: 1px solid orange;
+                height: 40px;
+                text-align: center;
+            }
+        </style>
+        <table>
+            <caption>Цена на флагманские модели iPhone и Xiaomi</caption>
+            <thead>
+                <tr>
+                    <th>
+                        Производитель
+                    </th>
+                    <th>
+                        Модель
+                    </th>
+                    <th>
+                        Цена
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="3" style="text-align: left;">
+                        iPhone
+                    </td>
+                    <td>
+                        12 Pro
+                    </td>
+                    <td>
+                        $999
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        12
+                    </td>
+                    <td>
+                        $799
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        12 mini
+                    </td>
+                    <td>
+                        $699
+                    </td>
+                </tr>
+
+                <tr>
+                    <td rowspan="2" style="text-align: left;">
+                        Xiaomi
+                    </td>
+                    <td>
+                        Mi 10
+                    </td>
+                    <td>
+                        $768
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Black 128 Gb
+                    </td>
+                    <td>
+                        $575
+                    </td>
+                </tr>
+                
+            </tbody>
+            <tfoot style="font-weight: 700;">
+                <tr>
+                    <td colspan="2" style="text-align: left;">
+                        Средняя цена:
+                    </td>
+                    <td>
+                        $777.66
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
         <button>Register</button>
     </div>
 
