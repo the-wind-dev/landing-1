@@ -109,23 +109,24 @@ h2 {
     line-height: 36px;
     letter-spacing: 0.37em;
 }
-
-.header__btn {
+.big-btn{
     display: block;
     padding: 21px 52px;
     margin: 0 auto;
-    margin-top: 45px;
-    background-color: #ffffff;
-
     font-family: Open Sans, sans-serif;
     font-weight: 800;
     font-size: 17px;
     line-height: 23px;
     text-transform: uppercase;
-
     color: #4A4A4A;
-    border: none;
     cursor: pointer;
+    border: none;
+    background-color: #ffffff;
+}
+.header__btn {  
+    margin-top: 45px;
+    background-color: #ffffff;
+    border: none; 
 }
 .header__btn:hover {
     background: linear-gradient(90deg, #FC6F5C 0.72%, #FAA235 51.21%, #FB923B 99.57%);
@@ -143,24 +144,24 @@ h2 {
     letter-spacing: 6px;
 
 }
-.block-header__btn {
+.small-btn {
     display: block;
     padding: 14px 40px;
-    background-color: #ffffff;
-
     font-family: Open Sans, sans-serif;
     font-weight: 800;
     font-size: 14px;
     line-height: 19px;
     text-transform: uppercase;
-
-    color: #4A4A4A;
-    border: 1px solid #4A4A4A;
+    
     cursor: pointer;
+}
+.block-header__btn { 
+    color: #4A4A4A;
+    background-color: #ffffff;
+    border: 1px solid #4A4A4A;
 }
 .block-header__btn:hover {
     background: linear-gradient(90deg, #FC6F5C 0.72%, #FAA235 51.21%, #FB923B 99.57%);
-    animation: filling;
 }
 
 .section-text {
@@ -305,3 +306,145 @@ h2 {
     text-transform: none;
 }
 /* end block 3 */
+/* start block 4 */
+#block4 .logo svg path {
+    fill: #000000;
+}
+#block4 .block-header {
+    margin-bottom: 65px;
+}
+#block4 .block-header h2 {
+    font-family: Fira Sans;
+    font-weight: 500;
+    letter-spacing: 6px;
+    padding-left: 20px;
+}
+#block4 .big-btn {
+    background: linear-gradient(0deg, #FF7E03, #FF7E03);
+    border: none;
+    color: #ffffff;
+}
+/* end block 4 */
+/* start block 5 */
+#block5 {
+    background: linear-gradient(0deg, rgba(255, 133, 22, 0.5), rgba(255, 133, 22, 0.5)), url(./images/bg_orange.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 794px;
+    color: #ffffff;
+}
+#block5 .logo svg path {
+    fill: #ffffff;
+}
+#block5 .block-header {
+    margin-bottom: 120px;
+}
+#block5 .section-text {
+    min-height: 125px;
+    font-weight: 400;
+}
+.todo-list {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 113px;
+}
+.todo-list__item {
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 38px;
+
+}
+.todo-list__item ul {
+    list-style: none;
+}
+.todo-list__description, 
+.todo-list__description a {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 19px;
+    line-height: 24px;
+    margin-top: 16px;
+}
+.todo-list__description a {
+    text-decoration: underline;
+    color: #ffffff;
+}
+/* end block 5 */
+/* start block 6 */
+#block6 .logo svg path {
+    fill: #000000;
+}
+#block6 .block-header {
+    margin-bottom: 100px;
+}
+#block6 .block-header h2 {
+    font-family: Fira Sans;
+    font-weight: 500;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    padding-left: 40px;
+}
+#block6 .section-text {
+    min-height: 240px;
+    max-width: 940px;
+    font-weight: 200;
+    font-size: 16px;
+    color: #000000;
+}
+/* end block 6 */
+/* start footer */
+.footer {
+    margin-bottom: 60px;
+}
+.footer__links {
+    display: flex;
+    justify-content: space-between;
+    max-width: 940px;
+    margin: 0 auto;
+    margin-bottom: 125px;
+}
+.footer__socials {
+    display: flex;
+    align-items: center;
+}
+.footer__socials a {
+    height: 32px;
+    width: 32px;
+    margin-right: 25px;
+    text-decoration: none;
+}
+.footer__socials .facebook {
+    height: 36px;
+    width: 18px;
+}
+.socials-text {
+    color: #000000;
+}
+.explore {
+    padding: 14px 32px;
+    color: #ffffff;
+    background: #FF7E03;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 19px;
+}
+.footer__contacts {
+    display: flex;
+    justify-content: space-between;
+}
+.footer__contacts span {
+    font-weight: 400;
+    font-size: 15px;
+    color: #000000;
+}
+.email {
+    color: #FF7E03;
+    font-size: 20px;
+    text-decoration: none;
+}
+/* end footer  */
