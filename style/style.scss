@@ -1,46 +1,13 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-body {
-    font-size: 16px;
-    color: #4A4A4A;
-    font-family: Open Sans, sans-serif;
-}
-.container {
-    max-width: 1200px;
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 10px;
-}
-#block1, #block2,
-#block3, #block4,
-#block5, #block6 {
-    padding-top: 55px;
-    padding-bottom: 69px;
-}
-h2 {
-    font-family: 'Open Sans';
-    font-weight: 400;
-    font-size: 36px;
-    text-align: center;
-    text-transform: uppercase;
-}
+@import "breakpoints";
+@import "global";
+@import "variables";
 
-#block2 h2, #block4 h2, #block6 h2{
-    color: #000000;/*4A4A4A*/
-}
-
-#block3 h2, #block5 h2 {
-    color: #ffffff;
-}
 /* start block 1 */
 #block1 {
     height: 794px;   
     color: #ffffff;
 
-    background: linear-gradient(0deg, rgba(255, 133, 22, 0.5), rgba(255, 133, 22, 0.5)), url(./images/bg_orange.jpg);
+    background: linear-gradient(0deg, rgba(255, 133, 22, 0.5), rgba(255, 133, 22, 0.5)), url(../images/bg_orange.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -118,7 +85,7 @@ h2 {
     font-size: 17px;
     line-height: 23px;
     text-transform: uppercase;
-    color: #4A4A4A;
+    color: $gray;
     cursor: pointer;
     border: none;
     background-color: #ffffff;
@@ -127,10 +94,12 @@ h2 {
     margin-top: 45px;
     background-color: #ffffff;
     border: none; 
+
+    &:hover {
+        background: linear-gradient(90deg, #FC6F5C 0.72%, #FAA235 51.21%, #FB923B 99.57%);
+    }
 }
-.header__btn:hover {
-    background: linear-gradient(90deg, #FC6F5C 0.72%, #FAA235 51.21%, #FB923B 99.57%);
-}
+
 /* end block 1  */
 /* start block2 */
 #block2 .logo svg path {
@@ -140,7 +109,7 @@ h2 {
     margin-bottom: 100px;
 }
 #block2 h2 {
-    color: #4A4A4A;
+    color: $gray;
     letter-spacing: 6px;
 
 }
@@ -156,9 +125,9 @@ h2 {
     cursor: pointer;
 }
 .block-header__btn { 
-    color: #4A4A4A;
+    color: $gray;
     background-color: #ffffff;
-    border: 1px solid #4A4A4A;
+    border: 1px solid $gray;
 }
 .block-header__btn:hover {
     background: linear-gradient(90deg, #FC6F5C 0.72%, #FAA235 51.21%, #FB923B 99.57%);
@@ -189,7 +158,7 @@ h2 {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    max-width: 150px; /*default*/ /*нужны ли тут дефолтные значения????*/
+    max-width: 150px; /*default*/ /*нужны ли тут дефолтные значения?*/
     width: 100%;
     height: 150px;    /*__?__*/
     margin-bottom: 10px;
@@ -212,7 +181,7 @@ h2 {
     font-size: 24px;
     line-height: 29px;
     text-transform: uppercase;
-    color: #FF7E03;
+    color: $orange;
     margin-bottom: 25px;
 }
 .description__text {
@@ -279,7 +248,7 @@ h2 {
 }
 .address::before {
     content: "";
-    background-image: url(./images/location-icon.svg);
+    background-image: url(../images/location-icon.svg);
     position: absolute;
     left: 0;
     bottom: 3px;
@@ -320,14 +289,14 @@ h2 {
     padding-left: 20px;
 }
 #block4 .big-btn {
-    background: linear-gradient(0deg, #FF7E03, #FF7E03);
+    background: linear-gradient(0deg, $orange, $orange);
     border: none;
     color: #ffffff;
 }
 /* end block 4 */
 /* start block 5 */
 #block5 {
-    background: linear-gradient(0deg, rgba(255, 133, 22, 0.5), rgba(255, 133, 22, 0.5)), url(./images/bg_orange.jpg);
+    background: linear-gradient(0deg, rgba(255, 133, 22, 0.5), rgba(255, 133, 22, 0.5)), url(../images/bg_orange.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 794px;
@@ -426,7 +395,7 @@ h2 {
 .explore {
     padding: 14px 32px;
     color: #ffffff;
-    background: #FF7E03;
+    background: $orange;
     text-decoration: none;
     text-transform: uppercase;
     font-weight: 800;
@@ -443,7 +412,7 @@ h2 {
     color: #000000;
 }
 .email {
-    color: #FF7E03;
+    color: $orange;
     font-size: 20px;
     text-decoration: none;
 }
