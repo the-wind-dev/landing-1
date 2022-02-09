@@ -6,20 +6,20 @@
 body {
     font-size: 16px;
     color: #4A4A4A;
+    font-family: Open Sans, sans-serif;
 }
-
-#block1 {
-    background: linear-gradient(0deg, rgba(255, 133, 22, 0.5), rgba(255, 133, 22, 0.5));
-    color: #ffffff;
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 10px;
 }
-#block1 h1 {
-    font-family: 'Open Sans';
-    font-weight: 800;
-    font-size: 56px;
-    text-align: center;
-    text-transform: uppercase;
+#block1, #block2,
+#block3, #block4,
+#block5, #block6 {
+    padding-top: 55px;
+    padding-bottom: 69px;
 }
-
 h2 {
     font-family: 'Open Sans';
     font-weight: 400;
@@ -29,7 +29,7 @@ h2 {
 }
 
 #block2 h2, #block4 h2, #block6 h2{
-    color: #000000;
+    color: #000000;/*4A4A4A*/
 }
 
 #block3 h2, #block5 h2 {
