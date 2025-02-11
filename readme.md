@@ -12,3 +12,6 @@
 1. Клонируйте репозиторий:
  git clone https://github.com/the-wind-dev/landing-1.git
 2. Откройте файл index.html в браузере
+
+## Скриншот результата
+![alt text](screenshot.png)
